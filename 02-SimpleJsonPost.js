@@ -1,6 +1,7 @@
 var http = require('http');
 var url = require('url');
 var crypto = require("crypto");
+var port = process.env.PORT || 8081;
 
 http.createServer(function (request, response) {
    // Send the HTTP header 
@@ -30,7 +31,7 @@ http.createServer(function (request, response) {
         response.end('Wow, this was an awesome '+request.method+' request. But you were asked to make a POST request!\n\nRequest Id: '+requestId); 
    }
    
-}).listen(8081);
+}).listen(port);
 
 // Console will print the message
-console.log('Server running at http://127.0.0.1:8081/');
+console.log("Server running at http://localhost:%d", port);
