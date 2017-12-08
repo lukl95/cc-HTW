@@ -1,0 +1,14 @@
+{
+    "name": "HTW-Berlin-CloudComputing-2017",
+    "description": "https://github.com/rherlt/HTW-Berlin-CloudComputing-2017",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Rico Herlt",
+    "engines": {
+        "node": ">=6.9.1"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
+}
