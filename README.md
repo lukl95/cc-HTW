@@ -37,3 +37,21 @@ Speichern Sie Ihre Anfrage und die Antwort des Servers in einer Textdatei als �
 
 Bonus-Aufgabe:
 Ändern Sie den Code der [02-SimpleJsonPost.js](https://github.com/rherlt/HTW-Berlin-CloudComputing-2017/blob/master/02-SimpleJsonPost.js)-Anwendung so ab, dass die Anwendung in der Lage ist, in der Antwort-Nachricht den Benutzernamen und das Kennwort im Klartext anzuzeigen, sofern sich der Client mit der "Basic"-Authentication authentifiziert hat. Speichern Sie das Programm als "03-BasicAuth.js". Erstellen Sie eine HTTP-POST-Anfrage mithilfe eines HTTP-Debug-Programms. Speichern Sie Ihre Anfrage und die Antwort des Servers in einer Textdatei als „03-BasicAuth.txt“.
+
+## Abgabe 2:
+
+![One does not simply run Node.js on Microsoft Azure](https://i.imgflip.com/alvg4.jpg "One does not simply run Node.js on Microsoft Azure")  
+Ihre Aufgabe besteht darin, die [HelloCloud.js](https://github.com/rherlt/HTW-Berlin-CloudComputing-2017/blob/master/HelloCloud.js) NodeJs-Anwendung in Microsoft Azure in Form von Platform as a Service auszuführen. Um diese Aufgabe zu bewerkstelligen, führen Sie folgende Teilaufgaben aus:    
+
+1. Erstellen Sie ein neues, öffentlich erreichbares Github Quell-Code-Repository bei [github.com](https://github.com/)  
+2. Sorgen Sie dafür, dass Sie die eine Server.js mit dem Quellcode im Repository haben.  
+3. Zusätzlich benötigen Sie die Konfigurationsdateien [gulpfile.js](https://github.com/rherlt/HTW-Berlin-CloudComputing-2017/blob/master/gulpfile.js) und [web.config](https://github.com/rherlt/HTW-Berlin-CloudComputing-2017/blob/master/web.config) in Ihrem Repository, damit der Webserver in der Lage ist die eingehenden HTTP-Requests an die Node.js-Anwendung weiterzuleiten.
+4. Verknüpfen Sie Ihr Github-Repository mit Ihrem Azure App Service und richten Sie [Continuous Delivery](https://de.wikipedia.org/wiki/Continuous_Delivery) ein.
+5. Sorgen Sie dafür, dass Sie die [HelloCloud.js](https://github.com/rherlt/HTW-Berlin-CloudComputing-2017/blob/master/HelloCloud.js)-Anwendung erfolgreich ausführen können. (Hinweis: Listening-Port des Servers) 
+6. Erstellen Sie eine HTTP-GET-Anfrage mithilfe eines HTTP-Debug-Programms. Speichern Sie Ihre Anfrage und die Antwort des Servers in einer Textdatei als „HTTP-Get.txt“  
+7. Erstellen Sie eine HTTP-POST-Anfrage mithilfe eines HTTP-Debug-Programms. Speichern Sie Ihre Anfrage und die Antwort des Servers in einer Textdatei als „HTTP-Post.txt“    
+
+
+Bonus-Aufgaben:  
+1. Sorgen Sie dafür, dass die [03-BasicAuth.js](https://github.com/rherlt/HTW-Berlin-CloudComputing-2017/blob/master/03-BasicAuth.js)-Anwendung bei Ihnen läuft. Erstellen Sie dafür die notwendigen HTTP-Anfragen aus der Bonus-Aufgabe der vergangenen Woche.  
+2. Implementieren Sie eine NodeJs Anwendung, die für einen Request die aktuelle Prozess-Id (des NodeJS-Prozesses im Server-Betriebssystem) zurück liefert. Sorgen Sie dafür, dass Ihre Anwendung auf drei Instanzen skaliert wird. Führen sie viele Requests auf Ihre Anwendung aus. Wenn Sie alles richtig gemacht haben, sehen sie drei verschiedene, immer wiederkehrende Prozess-Ids. Exportieren Sie das Ergebnis mit dem Fiddler. Hinweis: Sie benötigen dazu den Serviceplan Basic B1
